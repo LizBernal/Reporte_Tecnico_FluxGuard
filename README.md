@@ -1,4 +1,12 @@
-# FluxGuard
+# Integrantes:
+- 230110252 Ángeles Martínez Dilan Emir
+- 230110346 Bernal Franco Lizbeth de Jesús 
+- 230110322 Cruz Martinez Alejandro 
+- 220111989 Gress Ugarte María Guadalupe
+- 230110716 Maldonado Olguín Irving
+### Semestre y Grupo: 6 "B"
+
+# FluxGuard: Sistema IoT inalámbrico para monitoreo eléctrico en casa habitación mediante tecnología LoRa
 Sistema IoT para monitoreo eléctrico en casa habitación mediante tecnologías inalámbricas LoRa, Wi-Fi y GPRS.
 ![Prototipo FluxGuard](img/prototipo.jpeg)
 
@@ -97,10 +105,62 @@ Desarrollar un prototipo IoT basado en tecnologías inalámbricas LoRa, Wi-Fi y 
 ## 🟦 Nodo Emisor (TX)
 [Ver código TX](NodoEmisor_TX/NodoEmisor_TX.ino)
 
-## 🟩 Nodo receptor (RX)
+## 🟦 Nodo receptor (RX)
 [Ver código RX](NodoReceptor_RX/NodoReceptor_RX.ino)
 
 ## 🟧 LilyGO T-SIM7070G
 [Ver código Gateway](Lilygo/Lilygo.ino)
+
+# Configuración de sensores y tarjetas
+
+## ◻ Heltec ESP32 LoRa V3
+Los módulos Heltec ESP32 LoRa V3 fueron utilizados como nodo transmisor y receptor. 
+La comunicación LoRa fue configurada a una frecuencia de 915 MHz, utilizando un Spreading Factor de 7, ancho de banda de 125 kHz y Coding Rate 4/5.
+
+## ◼ Sensor SCT-013-030
+El sensor SCT-013-030 fue utilizado para la medición de corriente eléctrica mediante lectura analógica usando el convertidor ADS1115.
+
+## ◻ Sensor DS18B20
+El sensor DS18B20 fue utilizado para medir la temperatura del conductor eléctrico mediante comunicación OneWire.
+
+## ◼ Sensor DHT11
+El sensor DHT11 fue implementado para medir temperatura ambiental y humedad relativa.
+
+## ◻ Módulo GPS
+El sistema incorpora un módulo GPS para obtener coordenadas de ubicación del dispositivo.
+
+## ◼ Comunicación ESP-NOW
+La comunicación entre el nodo receptor y el gateway LilyGO se realizó mediante ESP-NOW utilizando el canal 7.
+
+## ◻ LilyGO T-SIM7070G
+Fue configurado para enviar datos mediante protocolo MQTT utilizando conectividad GPRS y respaldo WiFi.
+
+# Alimentación del prototipo
+
+## ⚡ Alimentación fija
+Los módulos Heltec ESP32 LoRa son alimentados mediante conexión USB y fuente regulada de 5V, permitiendo el funcionamiento continuo del sistema de monitoreo.
+
+## 📶 Alimentación móvil
+La LilyGO T-SIM7070G incorpora conectividad móvil mediante red GPRS, permitiendo el envío de datos hacia internet en lugares donde no se dispone de red WiFi.
+
+## 🌐 Respaldo de conectividad
+En caso de falla de la red móvil, el sistema puede utilizar conexión WiFi como mecanismo alternativo para mantener la transmisión de datos.
+
+# Recomendaciones y precauciones
+
+## 🔄 Recomendaciones de mejora
+- Implementar alertas automáticas mediante aplicación móvil.
+- Incorporar batería de respaldo para funcionamiento autónomo.
+- Mejorar el sistema de geolocalización en tiempo real.
+- Integrar algoritmos de detección inteligente de anomalías.
+- Desarrollar una interfaz web dedicada para monitoreo remoto.
+
+## 🛑 Precauciones
+- Verificar correctamente las conexiones eléctricas antes de energizar el sistema.
+- Evitar la exposición del prototipo a humedad o temperaturas extremas.
+- Utilizar fuentes de alimentación reguladas.
+- No manipular conductores eléctricos energizados sin supervisión.
+- Asegurar el aislamiento de sensores y conexiones.
+
 
 
