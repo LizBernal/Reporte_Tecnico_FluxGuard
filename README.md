@@ -100,6 +100,16 @@ Desarrollar un prototipo IoT basado en tecnologías inalámbricas LoRa, Wi-Fi y 
 
 ![Diagrma/Esquema Fluxguard](img/Diagrama_FluxGuard.jpg)
 
+### Descripción
+
+El sistema FluxGuard realiza el monitoreo de variables eléctricas y ambientales en una instalación de casa habitación mediante sensores conectados a un nodo transmisor Heltec ESP32 LoRa. 
+
+La información obtenida es enviada mediante tecnología LoRa hacia un nodo receptor, el cual retransmite los datos utilizando ESP-NOW hacia un gateway LilyGO T-SIM7070G.
+
+Posteriormente, el gateway envía la información mediante protocolo MQTT utilizando conectividad GPRS o WiFi hacia plataformas de procesamiento y almacenamiento como Node-RED e InfluxDB.
+
+Finalmente, los datos son visualizados mediante dashboards en Grafana y una aplicación móvil conectada mediante Firebase.
+
 # Códigos del proyecto
 
 ## 🟦 Nodo Emisor (TX)
@@ -109,7 +119,7 @@ Desarrollar un prototipo IoT basado en tecnologías inalámbricas LoRa, Wi-Fi y 
 [Ver código RX](NodoReceptor_RX/NodoReceptor_RX.ino)
 
 ## 🟧 LilyGO T-SIM7070G
-[Ver código Gateway](Lilygo/Lilygo.ino)
+[Ver código Lilygo](Lilygo/Lilygo.ino)
 
 # Configuración de sensores y tarjetas
 
@@ -149,7 +159,6 @@ En caso de falla de la red móvil, el sistema puede utilizar conexión WiFi como
 # Recomendaciones y precauciones
 
 ## 🔄 Recomendaciones de mejora
-- Implementar alertas automáticas mediante aplicación móvil.
 - Incorporar batería de respaldo para funcionamiento autónomo.
 - Mejorar el sistema de geolocalización en tiempo real.
 - Integrar algoritmos de detección inteligente de anomalías.
