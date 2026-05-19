@@ -75,4 +75,21 @@ Desarrollar un prototipo IoT basado en tecnologías inalámbricas LoRa, Wi-Fi y 
 | I2C SCL | GPIO22 | Comunicación I2C |
 | PWR MODEM | GPIO4 | Encendido del módem |
 
+# Tabla de direccionamiento
+
+| Elemento | Configuración |
+|---|---|
+| Frecuencia LoRa | 915 MHz |
+| Canal ESP-NOW | 7 |
+| Broker MQTT | broker.hivemq.com |
+| Puerto MQTT | 1883 |
+| Topic MQTT | itsoeh/mary_gress/fluxguard/datos |
+| Protocolo de transmisión | MQTT |
+| Tipo de comunicación local | LoRa |
+| Tipo de comunicación Gateway | ESP-NOW |
+
+# Esquema de Funcionamiento
+
+![Diagrma/Esquema Fluxguard](img/Diagrama_FluxGuard.jpg)
+
 
