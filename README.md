@@ -32,4 +32,47 @@ Desarrollar un prototipo IoT basado en tecnologías inalámbricas LoRa, Wi-Fi y 
 | LilyGO T-SIM7070G | Respaldo GPRS |
 | Módulo GPS | Geolocalización del sistema |
 
+## 💻 Software
+
+| Software | Función |
+|---|---|
+| Arduino IDE | Programación |
+| Node-RED | Dashboard |
+| MQTT Broker | Comunicación |
+| InfluxDB | Base de datos |
+| Grafana | Visualización |
+
+# Tabla de conexiones 
+
+## 🔹 Nodo Emisor (TX)
+
+| Componente | Pin ESP32 | Descripción |
+|---|---|---|
+| DS18B20 | GPIO4 | Sensor de temperatura del conductor |
+| DHT11 | GPIO5 | Sensor ambiental |
+| GPS RX/TX | GPIO7 / GPIO6 | Comunicación GPS |
+| ADS1115 SDA | GPIO41 | Comunicación I2C |
+| ADS1115 SCL | GPIO42 | Comunicación I2C |
+| OLED SDA | GPIO21 | Pantalla OLED |
+| OLED SCL | GPIO18 | Pantalla OLED |
+| LoRa SX1262 | SPI personalizado | Comunicación inalámbrica |
+
+## 🔹 Nodo Receptor (RX)
+
+| Componente | Pin ESP32 | Descripción |
+|---|---|---|
+| OLED SDA | GPIO21 | Pantalla OLED |
+| OLED SCL | GPIO18 | Pantalla OLED |
+| LoRa SX1262 | SPI personalizado | Recepción LoRa |
+
+## 🔸 Gateway LilyGO T-SIM7070G
+
+| Componente | Pin | Descripción |
+|---|---|---|
+| SIM7070 TX | GPIO27 | Comunicación módem |
+| SIM7070 RX | GPIO26 | Comunicación módem |
+| I2C SDA | GPIO21 | Comunicación I2C |
+| I2C SCL | GPIO22 | Comunicación I2C |
+| PWR MODEM | GPIO4 | Encendido del módem |
+
 
