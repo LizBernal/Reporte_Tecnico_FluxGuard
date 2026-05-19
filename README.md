@@ -77,7 +77,7 @@ Desarrollar un prototipo IoT basado en tecnologías inalámbricas LoRa, Wi-Fi y 
 | OLED SCL | GPIO18 | Pantalla OLED |
 | LoRa SX1262 | SPI personalizado | Recepción LoRa |
 
-## 🔸 Gateway LilyGO T-SIM7070G
+## 🔸 LilyGO T-SIM7070G
 
 | Componente | Pin | Descripción |
 |---|---|---|
