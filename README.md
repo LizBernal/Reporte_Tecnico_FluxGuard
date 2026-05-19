@@ -52,6 +52,10 @@ Desarrollar un prototipo IoT basado en tecnologías inalámbricas LoRa, Wi-Fi y 
 
 # Tabla de conexiones 
 
+## Diagrama de conexiones 
+
+![Conexiones](img/esquema_lora.jpg)
+
 ## 🔹 Nodo Emisor (TX)
 
 | Componente | Pin ESP32 | Descripción |
