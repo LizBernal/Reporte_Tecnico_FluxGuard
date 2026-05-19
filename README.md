@@ -92,4 +92,15 @@ Desarrollar un prototipo IoT basado en tecnologías inalámbricas LoRa, Wi-Fi y 
 
 ![Diagrma/Esquema Fluxguard](img/Diagrama_FluxGuard.jpg)
 
+# Códigos del proyecto
+
+## 🟦 Nodo Emisor (TX)
+[Ver código TX](NodoEmisor_TX/NodoEmisor_TX.ino)
+
+## 🟩 Nodo receptor (RX)
+[Ver código RX](NodoReceptor_RX/NodoReceptor_RX.ino)
+
+## 🟧 LilyGO T-SIM7070G
+[Ver código Gateway](Lilygo/Lilygo.ino)
+
 
